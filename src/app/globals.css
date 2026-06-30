@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+  --background: #030712; /* Very dark slate-950 */
+  --foreground: #f3f4f6; /* Light gray-100 */
+  
+  --primary: #10b981;    /* Emerald 500 (representing cybersecurity / run green) */
+  --primary-glow: rgba(16, 185, 129, 0.15);
+  
+  --secondary: #6366f1;  /* Indigo 500 (representing full-stack code) */
+  --secondary-glow: rgba(99, 102, 241, 0.15);
+  
+  --accent: #a855f7;     /* Purple 500 (representing AI & automation) */
+  --accent-glow: rgba(168, 85, 247, 0.15);
+  
+  --muted: #9ca3af;      /* Gray 400 */
+  --muted-dark: #1f2937; /* Gray 800 */
+  
+  --card-bg: rgba(17, 24, 39, 0.6); /* Translucent gray-900 */
+  --card-border: rgba(255, 255, 255, 0.08);
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted-text: var(--muted);
+  --color-muted-bg: var(--muted-dark);
+  
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui;
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  font-family: var(--font-archivo);
+}
+
+/* Utility classes */
+.glass {
+  background: rgba(10, 15, 30, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-hover:hover {
+  background: rgba(10, 15, 30, 0.85);
+  border-color: rgba(16, 185, 129, 0.3);
+  box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.15);
+  transform: translateY(-2px);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 30%, #a855f7 70%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-emerald {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 50%, #047857 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-indigo {
+  background: linear-gradient(135deg, #818cf8 0%, #6366f1 50%, #4338ca 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, #c084fc 0%, #a855f7 50%, #7e22ce 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow-blur {
+  filter: blur(80px);
+  opacity: 0.15;
+}
+
+
+

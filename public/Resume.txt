@@ -1,0 +1,111 @@
+Vishal V S
++919074137838
+linkedin.com/in/vishalvijay678 vishalvijay0369@gmail.com
+github.com/vishalvijay-123
+Profile
+Kerala
+B.E. Electronics and Communication graduate and Certified Ethical Hacker with hands-on experience across full
+stack web development, embedded systems, cybersecurity, AI integration, and infrastructure engineering. Builds 
+production-grade systems end to end, from microcontroller firmware and IoT sensor networks to modern React 
+web platforms and containerized AI pipelines. Published research author and CTF competitor.
+Work Experience
+Embedded Systems & IoT Intern, HCL Technologies
+•
+Designed and built a Smart Hydroponics IoT automation system using ESP32 
+microcontrollers to monitor temperature, humidity, and water levels, automating 
+relay-controlled irrigation pumps based on real-time sensor thresholds.
+•
+Programmed C++ firmware for ESP32 with multi-sensor integrations (DHT22, water
+level sensors), relay module control, and Wi-Fi connectivity, achieving 99.9% uptime in 
+testing.
+•
+Developed a FastAPI REST backend with SQLite for time-series sensor data logging at 
+1-minute intervals, exposing API endpoints for historical data queries and remote 
+pump overrides.
+Stack: ESP32, C++, Arduino IDE, FastAPI, SQLite, Python
+Projects
+01/2026 – 04/2026
+VS. — Full-Stack Company Website
+•
+Built a full employee management web app (Next.js, React, TypeScript) with separate dashboards for Admins, 
+Managers, and Employees — including task boards, leave requests, attendance tracking, and live notifications.
+Designed the database structure (10 linked tables) and built 30+ secure APIs with role-based access control.
+•
+•
+Created an AI tool that reads resume PDFs and automatically scores candidates, cutting manual screening time 
+by 90%.
+Added secure login with password hashing, session cookies, and safe file uploads.
+•
+Stack: Next.js, React, TypeScript, Prisma, SQLite, Tailwind CSS, Node.js
+https://github.com/vishalvijay-123/FullStackCompanywebsite 
+Old Skool Boxing Gym — Client Website & CMS
+•
+Built and deployed a full-stack client website with an animated frontend and a 5-tab CMS admin panel, running 
+live on Render with 24/7 uptime.
+•
+Optimized image uploads using in-memory Base64 compression, avoiding disk writes and reducing upload 
+times.
+•
+Set up a flexible database system (SQLite for development, PostgreSQL/Supabase for production) with 
+automatic table setup, default data seeding, and a scheduled job to clean up old messages every 10 days.
+Stack: Vite, Node.js, Express, PostgreSQL, Supabase, JWT, Render
+https://github.com/vishalvijay-123/oldskoolboxing 
+https://oldskoolboxing.onrender.com/ 
+Web Application Penetration Testing
+•
+Conducted black-box penetration testing on 5 live web applications, identifying critical vulnerabilities including 
+SQL Injection, Cross-Site Scripting (XSS), and CORS misconfigurations.
+•
+Authored detailed remediation reports with prioritized findings and proof-of-concept walkthroughs for 100% of 
+target owners.
+Stack: Burp Suite, Nmap, Kali Linux, SQLmap, Dirbuster
+Custom Vulnerability CTF Box
+•
+Designed and hosted a custom boot-to-root Linux challenge machine on VirtualBox containing multiple exploit 
+chains (privilege escalation, directory traversal) to train peer security analysts.
+Stack: VirtualBox, Kali Linux, Metasploit, Burp Suite
+Education
+B.E. Electronics and Communication Engineering, Aarupadai Veedu Institute of Technology, Chennai
+CGPA: 8.4
+Advanced Diploma in Cyber Defense, Red Team Hacker Academy, Thiruvananthapuram
+Score: 86%
+12th Standard, Christ Nagar Senior Secondary School, Thiruvananthapuram
+Score: 86.6%
+10th Standard, Amrita Vidyalayam
+Score: 100%
+Technical Skills
+Frontend
+React 19, Next.js 16 (App Router, RSC), TypeScript, 
+Tailwind CSS, shadcn/ui, Radix UI, TanStack Query v5, 
+Zustand
+Databases
+PostgreSQL, SQLite, MySQL, MongoDB, Supabase
+AI & Automation
+Ollama, DeepSeek, SDXL, Local LLM Deployment, 
+Deterministic Scoring Engines, pdf-parse
+Infrastructure
+Docker, Docker Compose, Linux (Kali, Ubuntu, Arch), 
+Git, VirtualBox, GPU Passthrough
+Certifications
+Backend & APIs
+Node.js, Express, FastAPI (Python), REST API Design, 
+Prisma ORM, bcrypt, JWT, cookie-based auth
+Cybersecurity
+Burp Suite, Metasploit, Nmap, Wireshark, Kali Linux, 
+RBAC, SIEM (ELK, Splunk), CEH Certified
+Embedded & IoT
+ESP32, Arduino, ATtiny85, C/C++, ESP-NOW, Wi-Fi, 
+GPIO, UART, I2C, Relay Modules, Sensor Integration
+Languages
+TypeScript, Python, C/C++, JavaScript, SQL, Bash
+Certified Ethical Hacker (CEH) — EC-Council
+Achievements
+Second Prize, ICTIH'26 International Conference
+Multiroom ESP32 Intercommunication Research Paper
+CTF Competition Winner, Red Team Hackers Academy
+Multiple wins at Red Team Hackers Academy
+TryHackMe Top 4%
+Ranked globally for ethical hacking and penetration testing
+
+
+https://app.notion.com/p/Vishal-Portfolio-2f2798c5ecc180e78f8edb0b83f729c9

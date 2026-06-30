@@ -1,0 +1,199 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Briefcase, GraduationCap, Calendar, Award } from "lucide-react";
+
+interface TimelineItem {
+  title: string;
+  subtitle: string;
+  period: string;
+  details: string[];
+  metrics?: string;
+  tech?: string[];
+}
+
+const EXPERIENCE: TimelineItem[] = [
+  {
+    title: "Embedded Systems & IoT Intern",
+    subtitle: "HCL Technologies",
+    period: "Internship Term",
+    details: [
+      "Designed and engineered a Smart Hydroponics IoT automation system leveraging ESP32 microcontrollers to orchestrate climate monitoring and relay pump controls.",
+      "Programmed C++ firmware with multi-sensor integrations (DHT22, water level) and implemented robust auto-reconnection logs to achieve 99.9% uptime in tests.",
+      "Developed a FastAPI REST backend with SQLite, executing time-series logs at 1-minute intervals and offering endpoints for historical queries and remote pump overrides."
+    ],
+    tech: ["ESP32", "C++", "FastAPI", "SQLite", "Python", "Arduino IDE"]
+  }
+];
+
+const EDUCATION: TimelineItem[] = [
+  {
+    title: "B.E. Electronics and Communication Engineering",
+    subtitle: "Aarupadai Veedu Institute of Technology, Chennai",
+    period: "Graduated",
+    metrics: "CGPA: 8.4 / 10.0",
+    details: [
+      "Specialized in microcontrollers, sensor integration, digital signals, and communication protocols.",
+      "Acquired solid engineering foundation in circuit design, signal processing, and firmware development."
+    ]
+  },
+  {
+    title: "Advanced Diploma in Cyber Defense",
+    subtitle: "Red Team Hacker Academy, Thiruvananthapuram",
+    period: "Completed",
+    metrics: "Score: 86%",
+    details: [
+      "In-depth practical curriculum covering network security, penetration testing, threat hunting, and digital forensics.",
+      "Hands-on labs executing black-box network scanning, wireless auditing, and privilege escalation."
+    ]
+  },
+  {
+    title: "12th Standard",
+    subtitle: "Christ Nagar Senior Secondary School, Thiruvananthapuram",
+    period: "CBSE board",
+    metrics: "Score: 86.6%",
+    details: ["Focused on Physics, Chemistry, Mathematics, and Computer Science."]
+  },
+  {
+    title: "10th Standard",
+    subtitle: "Amrita Vidyalayam",
+    period: "Completed",
+    metrics: "Score: 100%",
+    details: ["Achieved maximum GPA score."]
+  }
+];
+
+export default function Timeline() {
+  return (
+    <>
+      {/* SECTION 1: Experience */}
+      <section id="experience" className="relative py-24 md:py-32 overflow-hidden border-t border-white/5 bg-slate-950/20">
+        <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-emerald-500/5 rounded-full glow-blur pointer-events-none" />
+
+        <div className="max-w-4xl mx-auto px-6 relative z-10">
+          <div className="flex items-center gap-3 mb-16 justify-center text-center">
+            <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+              <Briefcase className="w-5 h-5" />
+            </div>
+            <div className="text-left">
+              <span className="text-[10px] uppercase font-bold tracking-widest text-emerald-500 block">Professional</span>
+              <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-slate-100 font-sans">Work Experience</h2>
+            </div>
+          </div>
+
+          <div className="relative border-l border-white/10 pl-8 ml-4 flex flex-col gap-12">
+            {EXPERIENCE.map((item, index) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="relative group"
+              >
+                {/* Glowing timeline node */}
+                <div className="absolute -left-[41px] top-2 w-5 h-5 rounded-full border-2 border-emerald-500/50 bg-slate-950 flex items-center justify-center group-hover:border-emerald-400 transition-colors duration-300">
+                  <div className="w-2 h-2 rounded-full bg-emerald-500 group-hover:bg-emerald-400 animate-pulse" />
+                </div>
+
+                <div className="glass p-8 rounded-2xl border-white/5 glass-hover">
+                  <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
+                    <span className="px-3 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/20 text-xs font-semibold text-emerald-400 flex items-center gap-1.5">
+                      <Calendar className="w-3.5 h-3.5" />
+                      {item.period}
+                    </span>
+                  </div>
+
+                  <h3 className="font-display font-extrabold text-xl sm:text-2xl text-slate-100 group-hover:text-emerald-400 transition-colors mb-1">
+                    {item.title}
+                  </h3>
+                  <h4 className="text-md font-semibold text-slate-400 mb-6">{item.subtitle}</h4>
+
+                  <ul className="text-sm text-slate-400 leading-relaxed list-disc list-inside flex flex-col gap-3.5 mb-8">
+                    {item.details.map((detail, dIdx) => (
+                      <li key={dIdx} className="pl-1 text-justify">{detail}</li>
+                    ))}
+                  </ul>
+
+                  {item.tech && (
+                    <div className="flex flex-wrap gap-2 pt-6 border-t border-white/5">
+                      {item.tech.map((t) => (
+                        <span
+                          key={t}
+                          className="px-3 py-1 text-xs font-semibold font-mono rounded bg-slate-900 border border-white/5 text-slate-400"
+                        >
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 2: Education */}
+      <section id="education" className="relative py-24 md:py-32 overflow-hidden border-t border-white/5 bg-slate-950/40">
+        <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-indigo-500/5 rounded-full glow-blur pointer-events-none" />
+
+        <div className="max-w-4xl mx-auto px-6 relative z-10">
+          <div className="flex items-center gap-3 mb-16 justify-center text-center">
+            <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
+              <GraduationCap className="w-5 h-5" />
+            </div>
+            <div className="text-left">
+              <span className="text-[10px] uppercase font-bold tracking-widest text-indigo-500 block">Academic</span>
+              <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-slate-100 font-sans">Education History</h2>
+            </div>
+          </div>
+
+          <div className="relative border-l border-white/10 pl-8 ml-4 flex flex-col gap-12">
+            {EDUCATION.map((item, index) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="relative group"
+              >
+                {/* Glowing timeline node */}
+                <div className="absolute -left-[41px] top-2 w-5 h-5 rounded-full border-2 border-indigo-500/50 bg-slate-950 flex items-center justify-center group-hover:border-indigo-400 transition-colors duration-300">
+                  <div className="w-2 h-2 rounded-full bg-indigo-500 group-hover:bg-indigo-400 animate-pulse" />
+                </div>
+
+                <div className="glass p-8 rounded-2xl border-white/5 glass-hover">
+                  <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
+                    <span className="px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-xs font-semibold text-indigo-400 flex items-center gap-1.5">
+                      <Calendar className="w-3.5 h-3.5" />
+                      {item.period}
+                    </span>
+                    {item.metrics && (
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-bold">
+                        <Award className="w-3.5 h-3.5" />
+                        {item.metrics}
+                      </span>
+                    )}
+                  </div>
+
+                  <h3 className="font-display font-extrabold text-xl sm:text-2xl text-slate-100 group-hover:text-indigo-400 transition-colors mb-1">
+                    {item.title}
+                  </h3>
+                  <h4 className="text-md font-semibold text-slate-400 mb-6">{item.subtitle}</h4>
+
+                  <ul className="text-sm text-slate-400 leading-relaxed list-disc list-inside flex flex-col gap-3">
+                    {item.details.map((detail, dIdx) => (
+                      <li key={dIdx} className="pl-1">{detail}</li>
+                    ))}
+                  </ul>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
