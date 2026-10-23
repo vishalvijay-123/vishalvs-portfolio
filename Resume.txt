@@ -9,6 +9,29 @@ stack web development, embedded systems, cybersecurity, AI integration, and infr
 production-grade systems end to end, from microcontroller firmware and IoT sensor networks to modern React 
 web platforms and containerized AI pipelines. Published research author and CTF competitor.
 Work Experience
+Freelance Full-Stack Developer & Consultant, Reset (@resetwith.aparna)
+•
+Architected and engineered an end-to-end habit transformation platform and coaching ecosystem, replacing manual tracking workflows with automated cloud infrastructure.
+•
+Designed relational schemas with Prisma ORM and Neon Serverless PostgreSQL with connection pooling, automated daily backups, and robust data integrity.
+•
+Developed an interactive administrative control center featuring cohort progression analytics, day-range steppers, habit blueprint builders, and secure session management.
+•
+Built high-performance REST APIs with cryptographic token authentication to synchronize habit completions with the companion mobile client application.
+Stack: Next.js 16, React 19, TypeScript, Prisma, Neon PostgreSQL, Tailwind CSS, Jose JWT, Recharts
+https://reset-with.vercel.app/
+
+Freelance Full-Stack Web Developer, Old Skool Boxing Gym
+•
+Built and deployed a responsive, high-aesthetic client website with an interactive 5-tab CMS admin panel, running live on Vercel with 24/7 uptime.
+•
+Optimized image uploads using in-memory Base64 compression, avoiding server disk writes and significantly accelerating media asset handling.
+•
+Engineered hybrid database connectivity (SQLite for rapid local testing, PostgreSQL / Supabase in production) with automatic schema initialization and scheduled log cleanup jobs.
+Stack: Vite, React, Node.js, Express, PostgreSQL, Supabase, JWT, Vercel
+https://github.com/vishalvijay-123/oldskoolboxing
+https://oldskoolboxing.vercel.app/
+
 Embedded Systems & IoT Intern, HCL Technologies
 •
 Designed and built a Smart Hydroponics IoT automation system using ESP32 
@@ -24,6 +47,17 @@ Developed a FastAPI REST backend with SQLite for time-series sensor data logging
 pump overrides.
 Stack: ESP32, C++, Arduino IDE, FastAPI, SQLite, Python
 Projects
+09/2026 – Present
+Reset — Habit Transformation Platform & CMS
+•
+Engineered a comprehensive lifestyle coaching platform and client portal featuring multi-pillar habit blueprint tracking, reflection journals, personal trainer profiles, and mobile sync.
+•
+Architected the platform with Next.js 16 (App Router), Neon Serverless PostgreSQL, Prisma ORM, and JWT authentication.
+•
+Built an administrative command center with cohort progression metrics and automated habit day ranges.
+Stack: Next.js 16, React 19, TypeScript, Tailwind CSS, Prisma, Neon PostgreSQL, Jose JWT, Recharts
+https://reset-with.vercel.app/
+
 01/2026 – 04/2026
 VS. — Full-Stack Company Website
 •
@@ -41,16 +75,16 @@ https://github.com/vishalvijay-123/FullStackCompanywebsite
 Old Skool Boxing Gym — Client Website & CMS
 •
 Built and deployed a full-stack client website with an animated frontend and a 5-tab CMS admin panel, running 
-live on Render with 24/7 uptime.
+live on Vercel with 24/7 uptime.
 •
 Optimized image uploads using in-memory Base64 compression, avoiding disk writes and reducing upload 
 times.
 •
 Set up a flexible database system (SQLite for development, PostgreSQL/Supabase for production) with 
 automatic table setup, default data seeding, and a scheduled job to clean up old messages every 10 days.
-Stack: Vite, Node.js, Express, PostgreSQL, Supabase, JWT, Render
+Stack: Vite, React, Node.js, Express, PostgreSQL, Supabase, JWT, Vercel
 https://github.com/vishalvijay-123/oldskoolboxing 
-https://oldskoolboxing.onrender.com/ 
+https://oldskoolboxing.vercel.app/ 
 Web Application Penetration Testing
 •
 Conducted black-box penetration testing on 5 live web applications, identifying critical vulnerabilities including 

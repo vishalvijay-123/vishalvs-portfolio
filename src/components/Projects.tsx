@@ -8,6 +8,7 @@ interface Project {
   title: string;
   category: "Web Development" | "Cybersecurity" | "AI & Automation" | "Embedded & IoT";
   date: string;
+  badge?: string;
   description: string;
   tech: string[];
   challenges: string;
@@ -17,6 +18,38 @@ interface Project {
 }
 
 const PROJECTS: Project[] = [
+  {
+    title: "Reset — Habit Transformation Platform & CMS",
+    category: "Web Development",
+    date: "09/2026 – Present",
+    badge: "Client Production",
+    description: "Full-stack wellness transformation ecosystem and coaching platform built for coach Aparna (@resetwith.aparna). Features habit blueprint tracking, reflection journals, dynamic coach & personal trainer roster, and a comprehensive administrative management portal.",
+    tech: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS", "Prisma", "Neon PostgreSQL", "Jose JWT", "Recharts"],
+    challenges: "Engineered scalable serverless database schemas with Neon PostgreSQL connection pooling and automated daily backup routines. Implemented secure role-based session auth and optimized mobile synchronization APIs.",
+    features: [
+      "Multi-pillar habit blueprint (Yourself, Physical, Routine, Accountability, Calmness) with real-time tracking.",
+      "Secure Admin Portal with cohort progression analytics, client program customization, and automated day range steppers.",
+      "Mobile companion REST API with cryptographically secured API key validation and offline habit sync.",
+      "Automated database backup and restore pipelines with Neon branch isolation."
+    ],
+    demoUrl: "https://reset-with.vercel.app/",
+  },
+  {
+    title: "Old Skool Boxing — Client Website & CMS",
+    category: "Web Development",
+    date: "09/2025 – 12/2025",
+    badge: "Client Production",
+    description: "Full-stack client portal featuring an animated aesthetic frontend and an interactive 5-tab CMS admin panel running with 24/7 uptime on Vercel.",
+    tech: ["Vite", "React", "Node.js", "Express", "PostgreSQL", "Supabase", "JWT", "Vercel"],
+    challenges: "Optimized large user-generated image uploads to prevent server disk overflow and latency on cloud hosting. Programmed a flexible database connector compatible with SQLite locally and PostgreSQL/Supabase in production.",
+    features: [
+      "In-memory Base64 image compression to avoid heavy server disk writes and reduce upload speed.",
+      "Flexible dual-database environment with automatic table setup and seeding on launch.",
+      "Cron job schedules automated database cleanup queries every 10 days to purge old message logs."
+    ],
+    githubUrl: "https://github.com/vishalvijay-123/oldskoolboxing",
+    demoUrl: "https://oldskoolboxing.vercel.app/",
+  },
   {
     title: "VS. — Enterprise Company Management Platform",
     category: "Web Development",
@@ -31,21 +64,6 @@ const PROJECTS: Project[] = [
       "Cookie-based secure session auth and encrypted password storage."
     ],
     githubUrl: "https://github.com/vishalvijay-123/FullStackCompanywebsite",
-  },
-  {
-    title: "Old Skool Boxing — Client Website & CMS",
-    category: "Web Development",
-    date: "09/2025 – 12/2025",
-    description: "Full-stack client portal featuring an animated aesthetic frontend and an interactive 5-tab CMS admin panel running with 24/7 uptime on Render.",
-    tech: ["Vite", "Node.js", "Express", "PostgreSQL", "Supabase", "JWT", "Render"],
-    challenges: "Optimized large user-generated image uploads to prevent server disk overflow and latency on a free hosting platform. Programmed a flexible database connector compatible with SQLite locally and PostgreSQL/Supabase in production.",
-    features: [
-      "In-memory Base64 image compression to avoid heavy server disk writes and reduce upload speed.",
-      "Flexible dual-database environment with automatic table setup and seeding on launch.",
-      "Cron job schedules automated database cleanup queries every 10 days to purge old message logs."
-    ],
-    githubUrl: "https://github.com/vishalvijay-123/oldskoolboxing",
-    demoUrl: "https://oldskoolboxing.onrender.com/",
   },
   {
     title: "Smart Hydroponics Automation System",
@@ -288,10 +306,17 @@ export default function Projects() {
               >
                 <div>
                   {/* Category Indicator */}
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-[10px] uppercase font-bold tracking-widest text-slate-500">
-                      {project.date}
-                    </span>
+                  <div className="flex items-center justify-between gap-2 mb-4">
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] uppercase font-bold tracking-widest text-slate-500">
+                        {project.date}
+                      </span>
+                      {project.badge && (
+                        <span className="px-2 py-0.5 rounded-full border border-emerald-500/20 bg-emerald-500/10 text-emerald-400 text-[9px] font-bold uppercase tracking-wider">
+                          {project.badge}
+                        </span>
+                      )}
+                    </div>
                     <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full border border-white/5 bg-white/5 text-slate-300 text-[10px] font-semibold">
                       {getCategoryIcon(project.category)}
                       {project.category}
