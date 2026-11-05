@@ -148,17 +148,17 @@ const PROJECTS: Project[] = [
     ],
   },
   {
-    title: "Automated Color-Sorting Robotic Arm",
+    title: "Vision-Based Color-Sorting Robotic Arm",
     category: "Embedded & IoT",
     date: "Hardware Project",
-    description: "Built an automated robotic arm that identifies colored items using a color sensor, picks them up with a servo-driven mechanical gripper, and accurately sorts them into designated boxes according to color.",
-    tech: ["Arduino Uno", "C++", "Color Sensor (TCS3200)", "Servo Motors", "Robotics", "Embedded C"],
-    challenges: "Calibrating RGB frequency thresholds to reliably classify colors under shifting ambient lighting, while tuning multi-axis servo trajectories to achieve smooth pick-and-place motions without dropping items.",
+    description: "Built a 4-DOF robotic arm prototype that sorted objects by color. Integrated a camera module with a Python computer vision script to detect and isolate object colors from live video, relaying motion commands over serial to an Arduino to actuate the servos and place items into color-matched boxes.",
+    tech: ["Python", "OpenCV", "Arduino", "Camera Module", "Servo Motors (4x)", "Serial Communication", "C++"],
+    challenges: "Overcoming real-world physical and optical hurdles: fluctuating ambient lighting caused inconsistent color thresholding in the camera feed, while mechanical servo calibration, gear slack, and gripper alignment made reliable pick-and-place precision tricky to stabilize.",
     features: [
-      "Real-time color sensing and RGB frequency classification to detect colored items.",
-      "Multi-axis articulated arm with a motorized gripper for automated pickup and transport.",
-      "Automated sorting state machine routing items to specific color-designated destination boxes.",
-      "C++ firmware coordinating sensor interrupts, movement paths, and home position resets."
+      "Camera-driven color extraction using Python to identify and categorize objects by color from the video feed.",
+      "Serial communication pipeline transmitting target coordinates and motor commands from the vision script to Arduino.",
+      "4-DOF robotic arm (4 servos) driving multi-joint movements and gripper actuation.",
+      "Automated sorting routine configured to deposit recognized colored items into designated collection boxes."
     ],
   },
   {
