@@ -148,16 +148,17 @@ const PROJECTS: Project[] = [
     ],
   },
   {
-    title: "Robotic Arm Automation Project",
+    title: "Automated Color-Sorting Robotic Arm",
     category: "Embedded & IoT",
     date: "Hardware Project",
-    description: "Built a hardware prototype robotic arm controlled by potentiometers and servo motors, utilizing custom C++ firmware.",
-    tech: ["Arduino Uno", "C++", "Servo Control", "GPIO", "Potentiometers"],
-    challenges: "Smoothing servo jitter through signal filtering and managing stable electrical power distribution to multiple servos during concurrent movements.",
+    description: "Built an automated robotic arm that identifies colored items using a color sensor, picks them up with a servo-driven mechanical gripper, and accurately sorts them into designated boxes according to color.",
+    tech: ["Arduino Uno", "C++", "Color Sensor (TCS3200)", "Servo Motors", "Robotics", "Embedded C"],
+    challenges: "Calibrating RGB frequency thresholds to reliably classify colors under shifting ambient lighting, while tuning multi-axis servo trajectories to achieve smooth pick-and-place motions without dropping items.",
     features: [
-      "Synchronized multi-joint movement mapping analog signals to angular offsets.",
-      "Custom filtering code smoothing out noise from analog potentiometers.",
-      "Repeatable physical task routine tracking built in firmware memory."
+      "Real-time color sensing and RGB frequency classification to detect colored items.",
+      "Multi-axis articulated arm with a motorized gripper for automated pickup and transport.",
+      "Automated sorting state machine routing items to specific color-designated destination boxes.",
+      "C++ firmware coordinating sensor interrupts, movement paths, and home position resets."
     ],
   },
   {
