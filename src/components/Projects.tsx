@@ -19,18 +19,18 @@ interface Project {
 
 const PROJECTS: Project[] = [
   {
-    title: "Reset — Habit Transformation Platform & CMS",
+    title: "Reset — Habit Transformation Platform",
     category: "Web Development",
     date: "09/2026 – Present",
     badge: "Client Production",
-    description: "Full-stack wellness transformation ecosystem and coaching platform built for coach Aparna (@resetwith.aparna). Features habit blueprint tracking, reflection journals, dynamic coach & personal trainer roster, and a comprehensive administrative management portal.",
-    tech: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS", "Prisma", "Neon PostgreSQL", "Jose JWT", "Recharts"],
-    challenges: "Engineered scalable serverless database schemas with Neon PostgreSQL connection pooling and automated daily backup routines. Implemented secure role-based session auth and optimized mobile synchronization APIs.",
+    description: "Personalized habit-building web application and administrative CMS created for a wellness brand. Built with Next.js App Router, Neon PostgreSQL, and secure JWT auth, utilizing AI coding tools for rapid development and refined with thorough security checks.",
+    tech: ["Next.js", "React", "TypeScript", "Prisma", "Neon PostgreSQL", "JWT", "Vercel"],
+    challenges: "Structuring an adaptable relational data model with Prisma ORM, enforcing rigorous role-based access control boundaries, and coordinating zero-downtime deployment on Vercel.",
     features: [
-      "Multi-pillar habit blueprint (Yourself, Physical, Routine, Accountability, Calmness) with real-time tracking.",
-      "Secure Admin Portal with cohort progression analytics, client program customization, and automated day range steppers.",
-      "Mobile companion REST API with cryptographically secured API key validation and offline habit sync.",
-      "Automated database backup and restore pipelines with Neon branch isolation."
+      "Custom administrative control center for habit blueprints, cohort progression, and client tracking.",
+      "Stateless JWT authentication paired with scoped tokens for companion mobile client sync.",
+      "Serverless PostgreSQL on Neon featuring automated backups and connection pooling.",
+      "Production deployment on Vercel with structured documentation and smooth client handover."
     ],
     demoUrl: "https://reset-with.vercel.app/",
   },
@@ -39,13 +39,13 @@ const PROJECTS: Project[] = [
     category: "Web Development",
     date: "09/2025 – 12/2025",
     badge: "Client Production",
-    description: "Full-stack client portal featuring an animated aesthetic frontend and an interactive 5-tab CMS admin panel running with 24/7 uptime on Vercel.",
-    tech: ["Vite", "React", "Node.js", "Express", "PostgreSQL", "Supabase", "JWT", "Vercel"],
-    challenges: "Optimized large user-generated image uploads to prevent server disk overflow and latency on cloud hosting. Programmed a flexible database connector compatible with SQLite locally and PostgreSQL/Supabase in production.",
+    description: "Responsive web presence and content management portal developed for Old Skool Boxing Gym. Features full administrative control over class timetables and coach profiles, hosted with continuous availability on Vercel.",
+    tech: ["Vite", "React", "Node.js", "Express", "Neon PostgreSQL", "JWT", "Vercel"],
+    challenges: "Streamlining media assets with in-memory Base64 image compression to bypass disk writes, and orchestrating a live database migration from Supabase to Neon PostgreSQL.",
     features: [
-      "In-memory Base64 image compression to avoid heavy server disk writes and reduce upload speed.",
-      "Flexible dual-database environment with automatic table setup and seeding on launch.",
-      "Cron job schedules automated database cleanup queries every 10 days to purge old message logs."
+      "Modular 5-tab admin dashboard for updating training schedules, announcements, and rosters.",
+      "In-memory image compression minimizing server overhead and upload latency.",
+      "Database transition to Neon PostgreSQL for enhanced uptime and reduced hosting costs."
     ],
     githubUrl: "https://github.com/vishalvijay-123/oldskoolboxing",
     demoUrl: "https://oldskoolboxing.vercel.app/",
@@ -80,16 +80,16 @@ const PROJECTS: Project[] = [
     ],
   },
   {
-    title: "Web Application Security Testing",
+    title: "Web Application Security Assessments",
     category: "Cybersecurity",
-    date: "Independent Audits",
-    description: "Conducted extensive black-box penetration testing and security audits on 5 live web applications to evaluate threat surfaces and vulnerabilities.",
+    date: "Red Team Academy",
+    description: "Executed thorough black-box penetration assessments across 5 staging web applications, mapping threat surfaces and evaluating defensive posture against real-world attack vectors.",
     tech: ["Burp Suite", "Nmap", "Kali Linux", "SQLmap", "Dirbuster"],
-    challenges: "Mapping complex multi-layered entry points and web APIs to identify subtle logic flaws without causing operational disruption or service downtime to targets.",
+    challenges: "Analyzing complex web APIs and multi-step entry points to detect nuanced authorization and injection flaws without impacting service availability.",
     features: [
-      "Identified critical threat vectors: SQL Injections, Cross-Site Scripting (XSS), and CORS misconfigurations.",
-      "Authored professional vulnerability remediation documents with prioritized severity indexes.",
-      "Provided working proof-of-concept walkthroughs to support developers in patching security holes."
+      "Identified critical OWASP Top 10 vulnerabilities including SQL injection, cross-site scripting (XSS), and CORS misconfigurations.",
+      "Authored prioritized vulnerability remediation reports with CVSS severity indexing.",
+      "Delivered reproducible proof-of-concept walkthroughs assisting developers in validating patches."
     ],
   },
   {

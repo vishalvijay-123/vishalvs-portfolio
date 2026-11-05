@@ -17,45 +17,44 @@ interface TimelineItem {
 
 const EXPERIENCE: TimelineItem[] = [
   {
-    title: "Freelance Full-Stack Developer & Consultant",
-    subtitle: "Reset — Habit Transformation Platform & CMS (@resetwith.aparna)",
+    title: "Freelance Web Developer & Consultant",
+    subtitle: "Reset — Habit Transformation Platform",
     period: "09/2026 – Present",
     roleBadge: "Client Production",
     demoUrl: "https://reset-with.vercel.app/",
     details: [
-      "Architected and engineered an end-to-end habit transformation ecosystem and digital coaching portal for a wellness client, replacing manual coaching workflows with automated digital systems.",
-      "Designed relational schemas and automated migrations using Prisma ORM with Neon Serverless PostgreSQL, implementing connection pooling and reliable daily backup routines.",
-      "Developed an interactive administrative control center featuring cohort progression analytics, day-range steppers, habit blueprint builders, and secure session management.",
-      "Built high-performance REST APIs with cryptographic token authentication to synchronize habit completions with the companion mobile client application."
+      "Engineered an end-to-end habit transformation platform and coaching CMS for a wellness client, managing everything from architecture planning through live Vercel deployment.",
+      "Designed resilient schemas using Prisma ORM with Neon Serverless PostgreSQL and implemented secure JWT auth, utilizing AI coding tools to accelerate development.",
+      "Conducted thorough security and access-control reviews, ensuring hardened token flows, robust session handling, and protected API endpoints.",
+      "Oversaw database migrations, automated backup pipelines, and guided complete client handover and training."
     ],
-    tech: ["Next.js 16", "React 19", "TypeScript", "Prisma", "Neon PostgreSQL", "Tailwind CSS", "Jose JWT", "Recharts"]
+    tech: ["Next.js", "React", "TypeScript", "Prisma", "Neon PostgreSQL", "JWT", "Vercel"]
   },
   {
-    title: "Freelance Full-Stack Web Developer",
+    title: "Embedded Systems & IoT Intern",
+    subtitle: "HCL Technologies, Chennai",
+    period: "01/2026 – 04/2026",
+    roleBadge: "Internship",
+    details: [
+      "Built a functioning smart hydroponics automation prototype using ESP32 microcontrollers to track environmental metrics and control irrigation pumps via relay modules.",
+      "Authored C++ firmware and built a lightweight FastAPI telemetry logging backend with SQLite, leveraging AI coding tools to streamline implementation.",
+      "Assembled and bench-tested hardware circuits, validating resilience against sensor disconnects, power fluctuations, and Wi-Fi outages."
+    ],
+    tech: ["ESP32", "C++", "Arduino IDE", "FastAPI", "SQLite", "Python"]
+  },
+  {
+    title: "Freelance Web Developer",
     subtitle: "Old Skool Boxing Gym — Client Website & CMS",
     period: "09/2025 – 12/2025",
     roleBadge: "Client Production",
     demoUrl: "https://oldskoolboxing.vercel.app/",
     githubUrl: "https://github.com/vishalvijay-123/oldskoolboxing",
     details: [
-      "Engineered and deployed a responsive, high-aesthetic client website paired with a comprehensive 5-tab content management system (CMS) for a boxing gym client.",
-      "Created an in-memory Base64 image compression pipeline to eliminate local disk bottlenecks and optimize media handling.",
-      "Designed a dual-environment database architecture (SQLite for local testing, PostgreSQL / Supabase in production) with automated schema migrations and scheduled log cleanup jobs.",
-      "Streamlined production hosting with Vercel deployment, delivering sub-second load times and reliable 24/7 uptime."
+      "Developed and launched a high-performance web portal for a boxing gym featuring a 5-tab administrative panel for managing schedules, announcements, and trainer rosters.",
+      "Architected the full-stack system in React, Node.js, and Express, pairing AI assistants with rigorous manual testing and code auditing.",
+      "Successfully transitioned production data from Supabase to Neon PostgreSQL to boost reliability and optimize operating overhead."
     ],
-    tech: ["Vite", "React", "Node.js", "Express", "PostgreSQL", "Supabase", "JWT", "Vercel"]
-  },
-  {
-    title: "Embedded Systems & IoT Intern",
-    subtitle: "HCL Technologies",
-    period: "Internship Term",
-    roleBadge: "Internship",
-    details: [
-      "Designed and engineered a Smart Hydroponics IoT automation system leveraging ESP32 microcontrollers to orchestrate climate monitoring and relay pump controls.",
-      "Programmed C++ firmware with multi-sensor integrations (DHT22, water level) and implemented robust auto-reconnection logs to achieve 99.9% uptime in tests.",
-      "Developed a FastAPI REST backend with SQLite, executing time-series logs at 1-minute intervals and offering endpoints for historical queries and remote pump overrides."
-    ],
-    tech: ["ESP32", "C++", "FastAPI", "SQLite", "Python", "Arduino IDE"]
+    tech: ["Vite", "React", "Node.js", "Express", "Neon PostgreSQL", "JWT", "Vercel"]
   }
 ];
 
@@ -63,27 +62,17 @@ const EDUCATION: TimelineItem[] = [
   {
     title: "B.E. Electronics and Communication Engineering",
     subtitle: "Aarupadai Veedu Institute of Technology, Chennai",
-    period: "Graduated",
-    metrics: "CGPA: 8.4 / 10.0",
+    period: "Graduated on 2026",
+    metrics: "CGPA: 8.276 / 10.0",
     details: [
       "Specialized in microcontrollers, sensor integration, digital signals, and communication protocols.",
-      "Acquired solid engineering foundation in circuit design, signal processing, and firmware development."
+      "Acquired a solid engineering foundation spanning circuit design, embedded systems, and modern software development."
     ]
   },
   {
-    title: "Advanced Diploma in Cyber Defense",
-    subtitle: "Red Team Hacker Academy, Thiruvananthapuram",
-    period: "Completed",
-    metrics: "Score: 86%",
-    details: [
-      "In-depth practical curriculum covering network security, penetration testing, threat hunting, and digital forensics.",
-      "Hands-on labs executing black-box network scanning, wireless auditing, and privilege escalation."
-    ]
-  },
-  {
-    title: "12th Standard",
+    title: "12th Standard (AISSCE)",
     subtitle: "Christ Nagar Senior Secondary School, Thiruvananthapuram",
-    period: "CBSE board",
+    period: "CBSE Board",
     metrics: "Score: 86.6%",
     details: ["Focused on Physics, Chemistry, Mathematics, and Computer Science."]
   },

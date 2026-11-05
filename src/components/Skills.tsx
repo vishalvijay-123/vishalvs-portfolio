@@ -1,56 +1,32 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Terminal, Shield, Cpu, Code, Database, Eye, Globe, Share2 } from "lucide-react";
+import { Shield, Cpu, Code, Globe } from "lucide-react";
 
 const SKILL_CATEGORIES = [
   {
-    title: "Programming Languages",
-    icon: Code,
-    color: "text-indigo-400 border-indigo-500/10 hover:border-indigo-500/30 bg-indigo-500/5",
-    skills: ["TypeScript", "Python", "C/C++", "JavaScript", "SQL", "Bash"],
-  },
-  {
-    title: "Cybersecurity",
+    title: "Security",
     icon: Shield,
     color: "text-emerald-400 border-emerald-500/10 hover:border-emerald-500/30 bg-emerald-500/5",
-    skills: ["Burp Suite", "Metasploit", "Nmap", "Wireshark", "Kali Linux", "RBAC", "SIEM (ELK, Splunk)", "CEH Certified"],
+    skills: ["Burp Suite", "Nmap / Zenmap", "Kali Linux", "Metasploit", "Vulnerability Assessment", "Splunk", "Elastic Stack (ELK)", "Wireshark", "Nessus"],
+  },
+  {
+    title: "Programming",
+    icon: Code,
+    color: "text-indigo-400 border-indigo-500/10 hover:border-indigo-500/30 bg-indigo-500/5",
+    skills: ["C++", "SQL", "Java", "Python"],
   },
   {
     title: "Embedded & IoT",
     icon: Cpu,
     color: "text-amber-400 border-amber-500/10 hover:border-amber-500/30 bg-amber-500/5",
-    skills: ["ESP32 / ESP-NOW", "Arduino / ATtiny85", "C/C++ Firmware", "I2C, SPI, UART, GPIO", "Relay Control Grids", "Sensor Integration (DHT22, etc)"],
+    skills: ["Digispark ATtiny85", "ESP32", "Arduino", "Sensor & Relay Integration"],
   },
   {
-    title: "AI & Automation",
-    icon: Terminal,
-    color: "text-purple-400 border-purple-500/10 hover:border-purple-500/30 bg-purple-500/5",
-    skills: ["Ollama / Local LLMs", "DeepSeek Integration", "SDXL Image Pipelines", "Deterministic Scoring Engines", "pdf-parse API Automation"],
-  },
-  {
-    title: "Frontend Web",
+    title: "Web / DevOps",
     icon: Globe,
     color: "text-cyan-400 border-cyan-500/10 hover:border-cyan-500/30 bg-cyan-500/5",
-    skills: ["React 19", "Next.js 16 (App Router)", "TypeScript", "Tailwind CSS v4", "shadcn/ui & Radix UI", "TanStack Query v5", "Zustand State Management"],
-  },
-  {
-    title: "Backend & Auth",
-    icon: Share2,
-    color: "text-rose-400 border-rose-500/10 hover:border-rose-500/30 bg-rose-500/5",
-    skills: ["Node.js / Express", "FastAPI (Python)", "REST API Design", "Prisma ORM", "JWT & bcrypt", "Cookie-based Session Auth"],
-  },
-  {
-    title: "Databases",
-    icon: Database,
-    color: "text-blue-400 border-blue-500/10 hover:border-blue-500/30 bg-blue-500/5",
-    skills: ["PostgreSQL", "Supabase", "SQLite", "MySQL", "MongoDB"],
-  },
-  {
-    title: "Infrastructure",
-    icon: Eye,
-    color: "text-teal-400 border-teal-500/10 hover:border-teal-500/30 bg-teal-500/5",
-    skills: ["Docker & Compose", "Linux (Kali, Ubuntu, Arch)", "Git & Version Control", "VirtualBox", "GPU Passthrough Configuration"],
+    skills: ["Full Stack Web Development", "PostgreSQL", "Prisma ORM", "FastAPI (basic)", "Vercel", "Git / GitHub", "Docker", "GitLab"],
   },
 ];
 

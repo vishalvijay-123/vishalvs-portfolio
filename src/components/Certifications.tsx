@@ -21,6 +21,13 @@ const ITEMS: Item[] = [
     color: "text-emerald-400 border-emerald-500/10 hover:border-emerald-500/30 bg-emerald-500/5",
   },
   {
+    title: "Advanced Diploma in Cyber Defense",
+    issuer: "Red Team Hacker Academy, Thiruvananthapuram",
+    desc: "In-depth practical curriculum covering network security, penetration testing, threat hunting, and digital forensics with hands-on labs.",
+    icon: Award,
+    color: "text-rose-400 border-rose-500/10 hover:border-rose-500/30 bg-rose-500/5",
+  },
+  {
     title: "TryHackMe Top 4% Global Rank",
     issuer: "TryHackMe Platform",
     desc: "Ranked globally for solving hands-on challenges covering penetration testing, network auditing, privilege escalation, and active directory exploit chains.",

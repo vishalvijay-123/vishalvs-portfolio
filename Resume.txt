@@ -4,142 +4,140 @@ linkedin.com/in/vishalvijay678 vishalvijay0369@gmail.com
 github.com/vishalvijay-123
 Profile
 Kerala
-B.E. Electronics and Communication graduate and Certified Ethical Hacker with hands-on experience across full
-stack web development, embedded systems, cybersecurity, AI integration, and infrastructure engineering. Builds 
-production-grade systems end to end, from microcontroller firmware and IoT sensor networks to modern React 
-web platforms and containerized AI pipelines. Published research author and CTF competitor.
+B.E. Electronics and Communication graduate and Certified Ethical Hacker with hands-on experience across
+cybersecurity, embedded systems, web development, and IoT engineering. Builds end-to-end systems ranging
+from microcontroller firmware and IoT sensor networks to web platforms. Published research author and CTF
+competitor.
+
 Work Experience
-Freelance Full-Stack Developer & Consultant, Reset (@resetwith.aparna)
+Freelance Web Developer & Consultant, Reset (@resetwith.aparna) | 09/2026 – Present
 •
-Architected and engineered an end-to-end habit transformation platform and coaching ecosystem, replacing manual tracking workflows with automated cloud infrastructure.
+Engineered an end-to-end habit transformation platform and coaching CMS for a wellness client, managing
+everything from architecture planning through live Vercel deployment.
 •
-Designed relational schemas with Prisma ORM and Neon Serverless PostgreSQL with connection pooling, automated daily backups, and robust data integrity.
+Designed resilient schemas using Prisma ORM with Neon Serverless PostgreSQL and implemented secure JWT
+auth, utilizing AI coding tools to accelerate development.
 •
-Developed an interactive administrative control center featuring cohort progression analytics, day-range steppers, habit blueprint builders, and secure session management.
+Conducted thorough security and access-control reviews, ensuring hardened token flows, robust session
+handling, and protected API endpoints.
 •
-Built high-performance REST APIs with cryptographic token authentication to synchronize habit completions with the companion mobile client application.
-Stack: Next.js 16, React 19, TypeScript, Prisma, Neon PostgreSQL, Tailwind CSS, Jose JWT, Recharts
+Oversaw database migrations, automated backup pipelines, and guided complete client handover and training.
+Stack: Next.js, React, TypeScript, Prisma, Neon PostgreSQL, JWT, Vercel
 https://reset-with.vercel.app/
 
-Freelance Full-Stack Web Developer, Old Skool Boxing Gym
+Embedded Systems & IoT Intern, HCL Technologies, Chennai | 01/2026 – 04/2026
 •
-Built and deployed a responsive, high-aesthetic client website with an interactive 5-tab CMS admin panel, running live on Vercel with 24/7 uptime.
+Built a functioning smart hydroponics automation prototype using ESP32 microcontrollers to track environmental
+metrics and control irrigation pumps via relay modules.
 •
-Optimized image uploads using in-memory Base64 compression, avoiding server disk writes and significantly accelerating media asset handling.
+Authored C++ firmware and built a lightweight FastAPI telemetry logging backend with SQLite, leveraging AI
+coding tools to streamline implementation.
 •
-Engineered hybrid database connectivity (SQLite for rapid local testing, PostgreSQL / Supabase in production) with automatic schema initialization and scheduled log cleanup jobs.
-Stack: Vite, React, Node.js, Express, PostgreSQL, Supabase, JWT, Vercel
-https://github.com/vishalvijay-123/oldskoolboxing
+Assembled and bench-tested hardware circuits, validating resilience against sensor disconnects, power
+fluctuations, and Wi-Fi outages.
+Stack: ESP32, C++, Arduino IDE, FastAPI, SQLite, Python
+
+Freelance Web Developer, Old Skool Boxing Gym | 09/2025 – 12/2025
+•
+Developed and launched a high-performance web portal for a boxing gym featuring a 5-tab administrative panel
+for managing schedules, announcements, and trainer rosters.
+•
+Architected the full-stack system in React, Node.js, and Express, pairing AI assistants with rigorous manual
+testing and code auditing.
+•
+Successfully transitioned production data from Supabase to Neon PostgreSQL to boost reliability and optimize
+operating overhead.
+Stack: Vite, React, Node.js, Express, Neon PostgreSQL, JWT, Vercel
 https://oldskoolboxing.vercel.app/
 
-Embedded Systems & IoT Intern, HCL Technologies
-•
-Designed and built a Smart Hydroponics IoT automation system using ESP32 
-microcontrollers to monitor temperature, humidity, and water levels, automating 
-relay-controlled irrigation pumps based on real-time sensor thresholds.
-•
-Programmed C++ firmware for ESP32 with multi-sensor integrations (DHT22, water
-level sensors), relay module control, and Wi-Fi connectivity, achieving 99.9% uptime in 
-testing.
-•
-Developed a FastAPI REST backend with SQLite for time-series sensor data logging at 
-1-minute intervals, exposing API endpoints for historical data queries and remote 
-pump overrides.
-Stack: ESP32, C++, Arduino IDE, FastAPI, SQLite, Python
 Projects
 09/2026 – Present
 Reset — Habit Transformation Platform & CMS
 •
-Engineered a comprehensive lifestyle coaching platform and client portal featuring multi-pillar habit blueprint tracking, reflection journals, personal trainer profiles, and mobile sync.
+Personalized habit-building web application and administrative CMS created for a wellness brand. Built with
+Next.js App Router, Neon PostgreSQL, and secure JWT auth, utilizing AI coding tools for rapid development.
 •
-Architected the platform with Next.js 16 (App Router), Neon Serverless PostgreSQL, Prisma ORM, and JWT authentication.
+Custom administrative control center for habit blueprints, cohort progression, and client tracking.
 •
-Built an administrative command center with cohort progression metrics and automated habit day ranges.
-Stack: Next.js 16, React 19, TypeScript, Tailwind CSS, Prisma, Neon PostgreSQL, Jose JWT, Recharts
+Serverless PostgreSQL on Neon featuring automated backups and connection pooling.
+Stack: Next.js, React, TypeScript, Prisma, Neon PostgreSQL, JWT, Vercel
 https://reset-with.vercel.app/
 
 01/2026 – 04/2026
 VS. — Full-Stack Company Website
 •
-Built a full employee management web app (Next.js, React, TypeScript) with separate dashboards for Admins, 
-Managers, and Employees — including task boards, leave requests, attendance tracking, and live notifications.
+Built a full employee management web app (Next.js, React, TypeScript) with separate dashboards for
+Admins, Managers, and Employees — including task boards, leave requests, attendance tracking, and live
+notifications.
+•
 Designed the database structure (10 linked tables) and built 30+ secure APIs with role-based access control.
 •
+Created an AI tool that reads resume PDFs and automatically scores candidates, cutting manual screening
+time by 90%.
 •
-Created an AI tool that reads resume PDFs and automatically scores candidates, cutting manual screening time 
-by 90%.
 Added secure login with password hashing, session cookies, and safe file uploads.
-•
 Stack: Next.js, React, TypeScript, Prisma, SQLite, Tailwind CSS, Node.js
-https://github.com/vishalvijay-123/FullStackCompanywebsite 
+https://github.com/vishalvijay-123/FullStackCompanywebsite
+
 Old Skool Boxing Gym — Client Website & CMS
 •
-Built and deployed a full-stack client website with an animated frontend and a 5-tab CMS admin panel, running 
-live on Vercel with 24/7 uptime.
+Responsive web presence and content management portal developed for Old Skool Boxing Gym. Features full
+administrative control over class timetables and coach profiles, hosted with continuous availability on Vercel.
 •
-Optimized image uploads using in-memory Base64 compression, avoiding disk writes and reducing upload 
-times.
+Modular 5-tab admin dashboard for updating training schedules, announcements, and rosters.
 •
-Set up a flexible database system (SQLite for development, PostgreSQL/Supabase for production) with 
-automatic table setup, default data seeding, and a scheduled job to clean up old messages every 10 days.
-Stack: Vite, React, Node.js, Express, PostgreSQL, Supabase, JWT, Vercel
-https://github.com/vishalvijay-123/oldskoolboxing 
-https://oldskoolboxing.vercel.app/ 
-Web Application Penetration Testing
+In-memory image compression minimizing server overhead and upload latency.
 •
-Conducted black-box penetration testing on 5 live web applications, identifying critical vulnerabilities including 
-SQL Injection, Cross-Site Scripting (XSS), and CORS misconfigurations.
+Database transition to Neon PostgreSQL for enhanced uptime and reduced hosting costs.
+Stack: Vite, React, Node.js, Express, Neon PostgreSQL, JWT, Vercel
+https://oldskoolboxing.vercel.app/
+
+Web Application Security Assessments
 •
-Authored detailed remediation reports with prioritized findings and proof-of-concept walkthroughs for 100% of 
-target owners.
+Executed thorough black-box penetration assessments across 5 staging web applications, mapping threat surfaces
+and evaluating defensive posture against real-world attack vectors.
+•
+Identified critical OWASP Top 10 vulnerabilities including SQL injection, cross-site scripting (XSS), and CORS
+misconfigurations.
+•
+Authored prioritized vulnerability remediation reports with CVSS severity indexing and proof-of-concept steps.
 Stack: Burp Suite, Nmap, Kali Linux, SQLmap, Dirbuster
+
 Custom Vulnerability CTF Box
 •
-Designed and hosted a custom boot-to-root Linux challenge machine on VirtualBox containing multiple exploit 
+Designed and hosted a custom boot-to-root Linux challenge machine on VirtualBox containing multiple exploit
 chains (privilege escalation, directory traversal) to train peer security analysts.
 Stack: VirtualBox, Kali Linux, Metasploit, Burp Suite
+
 Education
 B.E. Electronics and Communication Engineering, Aarupadai Veedu Institute of Technology, Chennai
-CGPA: 8.4
-Advanced Diploma in Cyber Defense, Red Team Hacker Academy, Thiruvananthapuram
-Score: 86%
-12th Standard, Christ Nagar Senior Secondary School, Thiruvananthapuram
-Score: 86.6%
+Graduated on 2026 | CGPA: 8.276
+12th Standard (AISSCE), Christ Nagar Senior Secondary School, Thiruvananthapuram
+CBSE Board | Score: 86.6%
 10th Standard, Amrita Vidyalayam
 Score: 100%
+
 Technical Skills
-Frontend
-React 19, Next.js 16 (App Router, RSC), TypeScript, 
-Tailwind CSS, shadcn/ui, Radix UI, TanStack Query v5, 
-Zustand
-Databases
-PostgreSQL, SQLite, MySQL, MongoDB, Supabase
-AI & Automation
-Ollama, DeepSeek, SDXL, Local LLM Deployment, 
-Deterministic Scoring Engines, pdf-parse
-Infrastructure
-Docker, Docker Compose, Linux (Kali, Ubuntu, Arch), 
-Git, VirtualBox, GPU Passthrough
-Certifications
-Backend & APIs
-Node.js, Express, FastAPI (Python), REST API Design, 
-Prisma ORM, bcrypt, JWT, cookie-based auth
-Cybersecurity
-Burp Suite, Metasploit, Nmap, Wireshark, Kali Linux, 
-RBAC, SIEM (ELK, Splunk), CEH Certified
+Security
+Burp Suite, Nmap / Zenmap, Kali Linux, Metasploit, Vulnerability Assessment, Splunk, Elastic Stack (ELK), Wireshark, Nessus
+
+Programming
+C++, SQL, Java, Python
+
 Embedded & IoT
-ESP32, Arduino, ATtiny85, C/C++, ESP-NOW, Wi-Fi, 
-GPIO, UART, I2C, Relay Modules, Sensor Integration
-Languages
-TypeScript, Python, C/C++, JavaScript, SQL, Bash
+Digispark ATtiny85, ESP32, Arduino, Sensor & Relay Integration
+
+Web / DevOps
+Full Stack Web Development, PostgreSQL, Prisma ORM, FastAPI (basic), Vercel, Git / GitHub, Docker, GitLab
+
+Certifications
 Certified Ethical Hacker (CEH) — EC-Council
+Advanced Diploma in Cyber Defense — Red Team Hacker Academy, Thiruvananthapuram
+
 Achievements
 Second Prize, ICTIH'26 International Conference
 Multiroom ESP32 Intercommunication Research Paper
-CTF Competition Winner, Red Team Hackers Academy
-Multiple wins at Red Team Hackers Academy
+CTF Competition Winner, Red Team Hacker Academy
+Multiple wins at Red Team Hacker Academy
 TryHackMe Top 4%
 Ranked globally for ethical hacking and penetration testing
-
-
-https://app.notion.com/p/Vishal-Portfolio-2f2798c5ecc180e78f8edb0b83f729c9
