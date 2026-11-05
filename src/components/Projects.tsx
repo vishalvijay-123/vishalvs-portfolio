@@ -19,6 +19,22 @@ interface Project {
 
 const PROJECTS: Project[] = [
   {
+    title: "BodyGold — Fitness Platform, E-Commerce & CMS",
+    category: "Web Development",
+    date: "Ongoing",
+    badge: "In Development",
+    description: "Comprehensive web platform and e-commerce ecosystem built for BodyGold fitness center. Features a full merchandise and supplement store with Razorpay checkout, automated membership subscription management, trainer roster profiles, and an interactive CMS admin control center.",
+    tech: ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "Razorpay API", "Tailwind CSS", "JWT"],
+    challenges: "Architecting reliable Razorpay checkout and webhook verification workflows for subscriptions and merchandise, designing flexible schemas for tiered memberships and inventory, and enforcing strict role-based access control between admins, trainers, and members.",
+    features: [
+      "E-Commerce store with product catalogs, shopping cart persistence, and secure Razorpay payment gateway integration.",
+      "Tiered gym membership plans with automated billing cycles, subscription status tracking, and member portals.",
+      "Interactive 360° CMS admin suite for managing products, trainer schedules, class timetables, and customer orders.",
+      "Trainer management module featuring trainer specialties, client booking slots, and roster assignments.",
+      "Role-based authentication (RBAC) ensuring protected session security across customer, trainer, and admin accounts."
+    ],
+  },
+  {
     title: "Reset — Habit Transformation Platform",
     category: "Web Development",
     date: "09/2026 – Present",

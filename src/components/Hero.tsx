@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import { Terminal, Shield, Cpu, Code, ArrowRight, Download, Mail } from "lucide-react";
+import { Terminal, Shield, Cpu, Code, ArrowRight, Mail } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const ROLES = [
@@ -234,26 +234,15 @@ export default function Hero() {
             <ArrowRight className="w-4 h-4" />
           </button>
 
-          <a
-            href="/Resume.pdf"
-            download="Vishal_VS_Resume.pdf"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white/5 hover:bg-white/10 text-slate-200 border border-white/10 hover:border-white/20 font-bold rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer hover-target"
-          >
-            <Download className="w-4 h-4" />
-            <span>Download Resume</span>
-          </a>
-
           <button
             onClick={() => handleScrollTo("contact")}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-slate-900/60 hover:bg-slate-900 text-slate-400 hover:text-slate-200 border border-white/5 hover:border-emerald-500/30 font-bold rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer hover-target"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white/5 hover:bg-white/10 text-slate-200 border border-white/10 hover:border-white/20 font-bold rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer hover-target"
           >
             <Mail className="w-4 h-4" />
             <span>Contact Me</span>
           </button>
         </motion.div>
       </div>
-
-
     </section>
   );
 }

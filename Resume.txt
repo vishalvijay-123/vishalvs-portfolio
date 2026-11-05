@@ -10,6 +10,18 @@ from microcontroller firmware and IoT sensor networks to web platforms. Publishe
 competitor.
 
 Work Experience
+Freelance Full-Stack Developer, BodyGold Fitness | Ongoing
+•
+Engineering an end-to-end fitness web platform and e-commerce ecosystem featuring a merchandise and
+supplements store with Razorpay checkout, automated memberships, and CMS management.
+•
+Architecting a multi-tab CMS admin panel for managing product catalogs, trainer assignments, and membership
+renewals with role-based access control (RBAC).
+•
+Integrating Razorpay payment gateway with server-side webhook signature verification for secure payments and
+subscription renewals.
+Stack: Next.js, React, TypeScript, Prisma, PostgreSQL, Razorpay API, Tailwind CSS, JWT
+
 Freelance Web Developer & Consultant, Reset (@resetwith.aparna) | 09/2026 – Present
 •
 Engineered an end-to-end habit transformation platform and coaching CMS for a wellness client, managing
@@ -51,6 +63,17 @@ Stack: Vite, React, Node.js, Express, Neon PostgreSQL, JWT, Vercel
 https://oldskoolboxing.vercel.app/
 
 Projects
+Ongoing
+BodyGold — Fitness Platform, E-Commerce & CMS
+•
+Comprehensive web platform and e-commerce ecosystem built for BodyGold fitness center. Features a full
+merchandise and supplement store with Razorpay checkout, automated memberships, and CMS admin center.
+•
+Interactive CMS admin suite for managing products, trainer schedules, class timetables, and customer orders.
+•
+E-Commerce store with product catalogs, shopping cart persistence, and secure Razorpay payment gateway.
+Stack: Next.js, React, TypeScript, Prisma, PostgreSQL, Razorpay API, Tailwind CSS, JWT
+
 09/2026 – Present
 Reset — Habit Transformation Platform & CMS
 •

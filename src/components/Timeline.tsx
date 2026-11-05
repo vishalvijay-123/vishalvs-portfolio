@@ -17,6 +17,19 @@ interface TimelineItem {
 
 const EXPERIENCE: TimelineItem[] = [
   {
+    title: "Freelance Full-Stack Developer",
+    subtitle: "BodyGold — Fitness Platform, E-Commerce & CMS",
+    period: "Ongoing",
+    roleBadge: "In Development",
+    details: [
+      "Engineering a complete fitness platform for BodyGold with an e-commerce merchandise/supplements store, Razorpay payment gateway, and gym membership management.",
+      "Developing a unified CMS administration dashboard to oversee product inventory, orders, membership renewals, and class schedules.",
+      "Integrating Razorpay API with server-side webhook signature verification for automated payment settlement and membership status updates.",
+      "Building dedicated trainer profiles, booking workflows, and role-based access control (RBAC) across customer, trainer, and administrator tiers."
+    ],
+    tech: ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "Razorpay API", "Tailwind CSS", "JWT"]
+  },
+  {
     title: "Freelance Web Developer & Consultant",
     subtitle: "Reset — Habit Transformation Platform",
     period: "09/2026 – Present",
