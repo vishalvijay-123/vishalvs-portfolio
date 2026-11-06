@@ -38,7 +38,7 @@ const ITEMS: Item[] = [
   {
     title: "Second Prize - International Research Conference",
     issuer: "ICTIH'26 International Conference",
-    desc: "Awarded second place for publishing research and demonstrating a novel hardware project: 'Multiroom ESP32 Intercommunication Network Architecture'.",
+    desc: "Awarded second place for publishing research and demonstrating a multiroom ESP32 intercom system utilizing UDP over Wi-Fi routers with router-free ESP-NOW fallback.",
     icon: Cpu,
     color: "text-indigo-400 border-indigo-500/10 hover:border-indigo-500/30 bg-indigo-500/5",
   },

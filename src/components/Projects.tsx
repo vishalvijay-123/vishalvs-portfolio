@@ -201,16 +201,17 @@ const PROJECTS: Project[] = [
     ],
   },
   {
-    title: "ESP32 Intercommunication Research",
+    title: "ESP32 Multiroom Intercom Network",
     category: "Embedded & IoT",
-    date: "Academic Research",
-    description: "Researched peer-to-peer radio frequency network topologies utilizing ESP-NOW protocols to exchange data packages without cellular or router infrastructure.",
-    tech: ["ESP32", "ESP-NOW", "C++ Firmware", "Mesh Topologies", "Radio Protocols"],
-    challenges: "Mitigating packet collisions and packet loss percentages during simultaneous transmissions over peer-to-peer 2.4GHz radio bands.",
+    date: "Research & Prototype",
+    description: "Designed and prototyped a multiroom audio and data intercommunication system using ESP32 microcontrollers. Communicates over local Wi-Fi router networks utilizing UDP for ultra-low latency packet transmission, while supporting a fallback router-free peer-to-peer mode via the ESP-NOW protocol.",
+    tech: ["ESP32", "UDP Protocol", "Wi-Fi Networking", "ESP-NOW", "C++ Firmware", "Audio Streaming", "Arduino IDE"],
+    challenges: "Minimizing audio latency, packet drop, and jitter over UDP across standard home Wi-Fi routers, while engineering dual-mode networking to operate seamlessly with a router or direct peer-to-peer via ESP-NOW when router infrastructure is absent.",
     features: [
-      "Direct packet transmission with low latency overhead compared to classic Wi-Fi.",
-      "Award-winning research paper outlining ESP32 multiroom intercom configurations.",
-      "Low-power wake protocols extending standalone IoT battery operations."
+      "Low-latency multiroom voice/audio streaming utilizing lightweight UDP socket transmission over Wi-Fi.",
+      "Dual networking capability: works over standard Wi-Fi routers and includes router-free direct ESP-NOW fallback.",
+      "Award-winning research paper and hardware prototype showcased at ICTIH'26 International Conference.",
+      "C++ ESP32 firmware coordinating audio buffers, packet serialization, and connection states."
     ],
   },
 ];

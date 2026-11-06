@@ -132,6 +132,16 @@ Designed and hosted a custom boot-to-root Linux challenge machine on VirtualBox 
 chains (privilege escalation, directory traversal) to train peer security analysts.
 Stack: VirtualBox, Kali Linux, Metasploit, Burp Suite
 
+ESP32 Multiroom Intercom Network
+•
+Designed and prototyped a multiroom intercom system with ESP32 microcontrollers streaming audio packets over
+local Wi-Fi router networks using UDP for ultra-low latency.
+•
+Engineered hybrid connectivity with a router-free peer-to-peer fallback mode powered by the ESP-NOW protocol.
+•
+Published research and demonstrated prototype, winning Second Prize at the ICTIH'26 International Conference.
+Stack: ESP32, UDP Protocol, Wi-Fi Networking, ESP-NOW, C++ Firmware, Arduino IDE
+
 Education
 B.E. Electronics and Communication Engineering, Aarupadai Veedu Institute of Technology, Chennai
 Graduated on 2026 | CGPA: 8.276

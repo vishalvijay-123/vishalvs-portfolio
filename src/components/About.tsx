@@ -25,7 +25,7 @@ const PHILOSOPHIES = [
   },
   {
     title: "Hardware Systems",
-    description: "Developing ESP32/ATtiny85 firmware in C++, configuring ESP-NOW multiroom networks, and designing IoT relay controller grids.",
+    description: "Developing ESP32/ATtiny85 firmware in C++, configuring UDP & ESP-NOW multiroom intercom networks, and designing IoT relay grids.",
     icon: Cpu,
     color: "text-amber-400 border-amber-500/10 hover:border-amber-500/30 bg-amber-500/5",
   },
